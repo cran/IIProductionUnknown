@@ -37,9 +37,9 @@ data("DataDamage")
 DataResult=cbind(DataDefoliation,DataDamage$D.L.S.2,DataDefoliation,
 DataDamage$D.L.S.4,DataDefoliation)
 ResultLossSource=LossSource(DataLoss = DataLossSource,DataResult =DataResult,
-Cols=c(1,3,5),verbose=TRUE)
+Cols<-c(1,3,5),verbose=TRUE)
 
-EOS=EffectivenessOfSolution(DataLossSource =DataLossSource,
+EOS<-EffectivenessOfSolution(DataLossSource =DataLossSource,
                             DataSolutionSource =DataSolutionSource,
                             ResultLossSource = ResultLossSource)
 }

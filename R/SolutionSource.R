@@ -32,22 +32,22 @@
 #' data("DataDefoliation")
 #' data("DataDamage")
 #'
-#' DataResult=cbind(DataDefoliation,DataDamage$D.L.S.2,DataDefoliation,
+#' DataResult<-cbind(DataDefoliation,DataDamage$D.L.S.2,DataDefoliation,
 #' DataDamage$D.L.S.4,DataDefoliation)
-#' ResultLossSource=LossSource(DataLoss = DataLossSource,DataResult =DataResult,
+#' ResultLossSource<-LossSource(DataLoss = DataLossSource,DataResult =DataResult,
 #' Cols=c(1,3,5),verbose=TRUE)
 #'
-#' EOS=EffectivenessOfSolution(DataLossSource =DataLossSource,
+#' EOS<-EffectivenessOfSolution(DataLossSource =DataLossSource,
 #'                             DataSolutionSource =DataSolutionSource,
 #'                             ResultLossSource = ResultLossSource)
 #'
 #' EOS
 #' #Put: y and y
-#' # ID=SelectEffectivenessOfSolution(EOS)
-#' ID=c(FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
+#' # ID<-SelectEffectivenessOfSolution(EOS)
+#' ID<-c(FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
 #' FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE)
 
-#' ResultSolutionSource=SolutionSource(SolutionData =DataSolutionSource,Production =DataResult,
+#' ResultSolutionSource<-SolutionSource(SolutionData =DataSolutionSource,Production =DataResult,
 #'                                     EffectivenessOfSolution =EOS ,Id = ID,Verbose = TRUE  )
 #' ResultSolutionSource
 #'
@@ -56,7 +56,7 @@
 #' #                  EffectivenessOfSolution=EOS)
 #'
 #' ###################################################
-#' EOSDamage=EffectivenessOfSolution(DataLossSource =DataDamage,
+#' EOSDamage<-EffectivenessOfSolution(DataLossSource =DataDamage,
 #'                                   DataSolutionSource =DataSolutionSource,
 #'                                   ResultLossSource = NULL)
 #'
