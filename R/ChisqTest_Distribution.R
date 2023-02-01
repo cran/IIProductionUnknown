@@ -1,10 +1,12 @@
 #'Loss and solution sources distribution informations
 #'@description Indicates the distribution of loss and solution sources: aggregate, random or regular.
 #'@usage ChisqTest_Distribution(Data)
-#'@param Data It is an matrix object containing data from loss and solution sources.
+#'@param Data It is a data frame object containing data from total number per repetition of loss source and solution source.
 #'@author Germano Leao Demolin-Leite (Instituto de Ciencias Agrarias da UFMG) \cr
 #' Alcinei Mistico Azevedo (Instituto de Ciencias Agrarias da UFMG)
-#'@return Return distribution of loss and solution sources: aggregate, random or regular.
+#'@return Return distribution of loss and solution sources: aggregate, random, or regular. This information is important to check
+#' whether the problem or solution occurs randomly or not. This has an impact on the decision making associated with increasing
+#' or reducing of the problem.
 #'@seealso  \code{\link{EffectivenessOfSolution}} ,  \code{\link{LossSource}}  ,  \code{\link{ReductionDamage}}
 #'@importFrom stats lm var
 #'@export

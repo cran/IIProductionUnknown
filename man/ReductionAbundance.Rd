@@ -14,10 +14,12 @@ ReductionAbundance(ResultSolutionSource,ResultLossSource,EffectivenessOfSolution
 \item{EffectivenessOfSolution}{Output of the EffectivenessOfSolution function.}
 }
 \value{
-The function returns the estimate of the reduction in abundance.
+The function returns the estimate of the reduction in abundance (loss source) due to solution source.
 }
 \description{
-Function to estimate of the abundance reduction
+Function to estimate of the abundance reduction.
+In this function you are asked to indicate 'y' or 'n' in order to define
+whether the association of the source of solution with the source of loss is important.
 }
 \examples{
 data("DataLossSource")

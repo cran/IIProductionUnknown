@@ -7,16 +7,20 @@
 EffectivenessOfSolution (DataLossSource,DataSolutionSource,ResultLossSource, verbose=TRUE)
 }
 \arguments{
-\item{DataLossSource}{It is an matrix object containing data from loss sources.}
+\item{DataLossSource}{It is a data frame or matrix object containing data from loss sources.
+Sources of loss refers to the number of individuals per observation that cause damage to the system.}
 
-\item{DataSolutionSource}{It is an matrix object containing data from solution sources.}
+\item{DataSolutionSource}{It is a data frame or matrix object containing data from solution sources.
+Solution sources refers to the number of individuals per observation that cause a reduction in the sources of loss in the system.}
 
 \item{ResultLossSource}{Output of LossSource function.}
 
 \item{verbose}{Logical value (TRUE/FALSE). TRUE displays the results of the effectiveness of solution}
 }
 \value{
-The function returns several indices associated with the loss source.
+The function returns the indices associated with the effectiveness of
+  solution source in relation to the loss source, considering the coefficients
+  obtained in the regression analyses.
 }
 \description{
 This function allows to calculate E.S. of each S.S. by L.S. (significant in the reduction of defoliation or damage) in

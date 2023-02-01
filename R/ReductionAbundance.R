@@ -1,5 +1,7 @@
 #'Estimate of the abundance reduction
-#'@description Function to estimate of the abundance reduction
+#'@description Function to estimate of the abundance reduction.
+#'In this function you are asked to indicate 'y' or 'n' in order to define
+#'whether the association of the source of solution with the source of loss is important.
 #'@usage ReductionAbundance(ResultSolutionSource,ResultLossSource,EffectivenessOfSolution)
 #'@param ResultSolutionSource Output of the SolutionSource function.
 #'@param ResultLossSource Output of the LossSource function.
@@ -7,7 +9,7 @@
 
 #'@author Germano Leao Demolin-Leite (Instituto de Ciencias Agrarias da UFMG) \cr
 #' Alcinei Mistico Azevedo (Instituto de Ciencias Agrarias da UFMG)
-#'@return The function returns the estimate of the reduction in abundance.
+#'@return The function returns the estimate of the reduction in abundance (loss source) due to solution source.
 #'@seealso  \code{\link{EffectivenessOfSolution}} ,  \code{\link{SolutionSource}}
 #'@importFrom stats lm
 

@@ -4,16 +4,20 @@
 #' it is of the second degree. Where, R2 = determination coefficient and P = significance of ANOVA, B1 = regression coefficient,
 #' and B2 = regression coefficient (variable2), of the simple regression equation of the S.S..
 #' @usage EffectivenessOfSolution (DataLossSource,DataSolutionSource,ResultLossSource, verbose=TRUE)
-#' @param DataLossSource It is an matrix object containing data from loss sources.
-#' @param DataSolutionSource It is an matrix object containing data from solution sources.
+#' @param DataLossSource It is a data frame or matrix object containing data from loss sources.
+#' Sources of loss refers to the number of individuals per observation that cause damage to the system.
+#' @param DataSolutionSource It is a data frame or matrix object containing data from solution sources.
+#' Solution sources refers to the number of individuals per observation that cause a reduction in the sources of loss in the system.
 #' @param ResultLossSource Output of LossSource function.
-#'@param verbose Logical value (TRUE/FALSE). TRUE displays the results of the effectiveness of solution
-#'@author Germano Leao Demolin-Leite (Instituto de Ciencias Agrarias da UFMG) \cr
+#' @param verbose Logical value (TRUE/FALSE). TRUE displays the results of the effectiveness of solution
+#' @author Germano Leao Demolin-Leite (Instituto de Ciencias Agrarias da UFMG) \cr
 #' Alcinei Mistico Azevedo (Instituto de Ciencias Agrarias da UFMG)
 
 
 
-#' @return The function returns several indices associated with the loss source.
+#' @return The function returns the indices associated with the effectiveness of
+#'   solution source in relation to the loss source, considering the coefficients
+#'   obtained in the regression analyses.
 #' @seealso  \code{\link{ReductionDamage}} ,  \code{\link{SolutionSource}}
 #' @importFrom stats anova chisq.test coefficients cor pf predict
 #' @importFrom crayon green
@@ -193,6 +197,6 @@ for(i in 1:ncol(D)){
 }
 
 X= data.frame(es)
-colnames(X)=c("InimigoNatural","Praga","ES")
+colnames(X)=c("SolutionSource","LossSource","ES")
 X
 }

@@ -8,7 +8,53 @@
 #'@return Returns a vector with logical values demonstrating the
 #'interactions considered important for the analysis.
 
+#'@examples
+#\dontrun{
+#' data("DataLossSource")
+#' ChisqTest_Distribution(DataLossSource)
+#'
+#' data("DataSolutionSource")
+#' ChisqTest_Distribution(DataSolutionSource)
+#'
+#' data("DataDefoliation")
+#' data("DataDamage")
+#'
+#' DataResult<-cbind(DataDefoliation,DataDamage$D.L.S.2,DataDefoliation,
+#' DataDamage$D.L.S.4,DataDefoliation)
+#' ResultLossSource<-LossSource(DataLoss = DataLossSource,DataResult =DataResult,
+#' Cols=c(1,3,5),verbose=TRUE)
+#'
+#' EOS<-EffectivenessOfSolution(DataLossSource =DataLossSource,
+#'                             DataSolutionSource =DataSolutionSource,
+#'                             ResultLossSource = ResultLossSource)
+#'
+#' EOS
+#' #Put: y and y
+#' # ID=SelectEffectivenessOfSolution(EOS)
+#' ID<-c(FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
+#' FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE)
 
+#' ResultSolutionSource<-SolutionSource(SolutionData =DataSolutionSource,Production =DataResult,
+#'                                     EffectivenessOfSolution =EOS ,Id = ID,Verbose = TRUE  )
+#' ResultSolutionSource
+#'
+#' # Put: y,n,y,n,y,n and y
+#' # ReductionAbundance(ResultSolutionSource,ResultLossSource,
+#' #                  EffectivenessOfSolution=EOS)
+#'
+#' ###################################################
+#' EOSDamage<-EffectivenessOfSolution(DataLossSource =DataDamage,
+#'                                   DataSolutionSource =DataSolutionSource,
+#'                                   ResultLossSource = NULL)
+#'
+#'
+#' EOSDamage
+#'
+#' # Put: y, n and y
+#' #ReductionDamage(ResultSolutionSource,LossSource=DataDamage,
+#' #                EffectivenessOfSolution=EOSDamage)
+# }
+#'
 
 #'@seealso  \code{\link{EffectivenessOfSolution}} ,  \code{\link{SolutionSource}}  ,  \code{\link{LossSource}}
 #'@importFrom stats lm

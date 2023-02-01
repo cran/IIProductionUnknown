@@ -7,10 +7,12 @@
 ChisqTest_Distribution(Data)
 }
 \arguments{
-\item{Data}{It is an matrix object containing data from loss and solution sources.}
+\item{Data}{It is a data frame object containing data from total number per repetition of loss source and solution source.}
 }
 \value{
-Return distribution of loss and solution sources: aggregate, random or regular.
+Return distribution of loss and solution sources: aggregate, random, or regular. This information is important to check
+whether the problem or solution occurs randomly or not. This has an impact on the decision making associated with increasing
+or reducing of the problem.
 }
 \description{
 Indicates the distribution of loss and solution sources: aggregate, random or regular.

@@ -9,7 +9,8 @@ ReductionDamage(ResultSolutionSource,LossSource,EffectivenessOfSolution)
 \arguments{
 \item{ResultSolutionSource}{Output of the SolutionSource function.}
 
-\item{LossSource}{Loss Source data.}
+\item{LossSource}{Loss Source data. Sources of loss refers to the number of
+individuals per observation that cause damage to the system.}
 
 \item{EffectivenessOfSolution}{Output of the EffectivenessOfSolution function.}
 }

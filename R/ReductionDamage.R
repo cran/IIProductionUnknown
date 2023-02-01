@@ -3,7 +3,9 @@
 #'@usage ReductionDamage(ResultSolutionSource,LossSource,EffectivenessOfSolution)
 
 #'@param ResultSolutionSource Output of the SolutionSource function.
-#'@param LossSource Loss Source data.
+#'@param LossSource Loss Source data. Sources of loss refers to the number of
+#'individuals per observation that cause damage to the system.
+
 #'@param EffectivenessOfSolution Output of the EffectivenessOfSolution function.
 
 #'@author Germano Leao Demolin-Leite (Instituto de Ciencias Agrarias da UFMG) \cr

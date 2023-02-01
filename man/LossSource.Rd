@@ -7,20 +7,22 @@
 LossSource(DataLoss,DataResult,Cols=c(1,3,5),verbose)
 }
 \arguments{
-\item{DataLoss}{It is an matrix object containing data from loss sources.}
+\item{DataLoss}{It is a data frame or matrix object containing data from loss sources.
+Sources of loss refers to the number of individuals per observation that cause damage to the system.}
 
-\item{DataResult}{Matrix with loss sources.}
+\item{DataResult}{Matrix or data frame with loss sources.
+Solution sources refers to the number of individuals per observation that cause a reduction in the sources of loss in the system.}
 
 \item{Cols}{Most important data loss columns.}
 
 \item{verbose}{Logical value (TRUE/FALSE). TRUE displays the results of the analysis.}
 }
 \value{
-The function returns several indices associated with the loss source.
+The function returns the Percentage of Importance Index-Production Unknown and estimates of variables used in its construction.
 }
 \description{
 These functions allow to calculate the total n of the L.S. (n),
-R.P., ks, c, ds, n.I.I., Sum.n.I.I., and percentage of I.I. (P.I.I.) by each L.S..\cr
+R.P., ks, c, ds, n.I.I., S.n.I.I., and percentage of I.I. (P.I.I.) by each L.S..\cr
 Equations:
 R.P. = Damage or defoliation \cr
 n=total n per sample \cr
@@ -28,7 +30,7 @@ k.s.= R.P./n \cr
 c = SUM of occurrence of L.S. on the samples, where, absence = 0 or presence = 1.\cr
 ds = 1 - P of the chi-square test of L.S. on the samples.\cr
 n.I.I.=ks x c x ds \cr
-Sum.n.I.I. = sum of all n.I.I.\cr
+S.n.I.I. = sum of all n.I.I.\cr
 Percentage of I.I. (P.I.I.)=(n.I.I. of each L.S./sum of all n.I.I.)*100
 }
 \examples{

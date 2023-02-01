@@ -2,7 +2,7 @@ Package: IIProductionUnknown
 Type: Package
 Title: Analyzing Data Through of Percentage of Importance Indice
         (Production Unknown) and Its Derivations
-Version: 0.0.2
+Version: 0.0.3
 Authors@R: 
      c(person(given = "Germano Leao",
            family = "Demolin-Leite",
@@ -20,13 +20,13 @@ Depends: crayon
 Encoding: UTF-8
 Language: en-US
 LazyData: false
-RoxygenNote: 7.2.0
+RoxygenNote: 7.2.2
 NeedsCompilation: no
-Packaged: 2022-10-11 22:57:07 UTC; AlcineiAzevedo
+Packaged: 2023-02-01 12:12:19 UTC; User
 Author: Germano Leao Demolin-Leite [aut]
     (<https://orcid.org/0000-0002-2928-3193>),
   Alcinei Mistico Azevedo [aut, cre]
     (<https://orcid.org/0000-0001-5196-0851>)
 Maintainer: Alcinei Mistico Azevedo <alcineimistico@hotmail.com>
 Repository: CRAN
-Date/Publication: 2022-10-11 23:12:33 UTC
+Date/Publication: 2023-02-01 12:40:05 UTC

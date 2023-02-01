@@ -4,9 +4,9 @@
 \name{IIProductionUnknown package}
 \alias{IIProductionUnknown package}
 \alias{IIProductionUnknown}
-\title{Analyzing data through of percentage of importance indice-production unknow and its derivations.}
+\title{Analyzing data through of percentage of importance indice-production unknown and its derivations.}
 \description{
-The Percentage of Importance Indice-production unknow (Percentage_I.I.P.U.) bases in magnitudes, frequencies,
+The Percentage of Importance Indice-production unknown (Percentage_I.I.P.U.) bases in magnitudes, frequencies,
 and distributions of occurrence of an event. This index can detect the key loss sources (L.S)
  and solution sources (S.S.), classifying them according to their importance in terms of
  damage or damage reduction in the system. The
